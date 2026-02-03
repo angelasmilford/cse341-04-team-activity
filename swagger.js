@@ -6,13 +6,13 @@ const doc = {
         title: 'My API',              // by default: 'REST API'
         description: 'Temple API'         // by default: ''
     },
-    // servers: [
-        // {
-            // url: 'http://localhost:8080',   // by default: 'http://localhost:3000'
-            // description: ''     // by default: ''
-        // }
+    servers: [
+        {
+            url: 'http://localhost:8080',   // by default: 'http://localhost:3000'
+            description: 'Local server'     // by default: ''
+        }
         // { ... }
-    // ],
+    ],
     // tags: [                     // by default: empty Array
         // {
             // name: '',           // Tag name
@@ -38,7 +38,7 @@ const doc = {
 };
 
 const outputFile = './swagger.json';
-const routes = ['./routes/index.js', './routes/temple.js']; // './routes/temple.js
+const routes = [ './routes/temple.js']; // './routes/index.js
 
 /* NOTE: If you are using the express Router, you must pass in the 'routes' only the 
 root file where the route starts, such as index.js, app.js, routes.js, etc ... */
